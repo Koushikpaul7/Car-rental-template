@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Car site</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-section">
+      <div class="container-fluid">
+        <div class="upper-section d-none d-md-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 d-flex">
+                <p>
+                  <i class="fa-solid fa-phone me-1"></i>
+                </p>
+                  <a href="tel:013256554"><p>0124558885</p></a>
+                
+                <p class="mx-3">|</p>
+                <p>
+                  <i class="fa-solid fa-envelope me-1"></i>
+                </p>
+                 <a href="mailto:abc@gmail.com"><p>Info@gmail.com</p></a>
+                
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex footer-icons justify-content-end">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook-f icon-2-fb px-2"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-twitter icon-2-twit mx-2"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-instagram icon-2-insta fw-bold"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fa-brands fa-youtube icon-2-utube mx-2"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="middle-section">
+          <div class="container-lg container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Royal Cars</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars"></i>
+                  </span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <div class="d-flex menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Cars
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          pages
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdown"
+                        >
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a
+                          class="nav-link"
+                          href="#"
+                          tabindex="-1"
+                          aria-disabled="true"
+                          >Contact</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="last-section">
+         <div class="container"> 
+            <div class="row py-3">
+                <div class="col-lg-2 col-md-4 col-12">
+                  <select class="selection-style" name="location">
+                    <option disabled selected>Pickup location</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12">
+                  <select class="selection-style" name="location">
+                    <option disabled selected>Drop location</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-4 col-12">
+                    <input type='text' class="selection-style" id='datepicker' placeholder="Pickup Date"> <br>
+                    
+                </div>
+                <div class="col-lg-2 col-md-4 col-12">
+                  <input type="text" placeholder="Pickup time" name="p-time" class="selection-style"/>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                  <select class="selection-style" name="location">
+                    <option disabled selected>Select a car</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-lg-2 col-md-12 col-12">
+                   <div class="head-btn">
+                    <a href="#" class="btn ">Search</a>
+                   </div>
+                </div>
+              </div>
+         </div>
+        </div>
+      </div>
+    </header>
+    <!-- hero section -->
+    <section class="hero-section">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item hero-slide-1 active">
+             <div class="d-flex justify-content-center text-center">
+                <div class="slider-text">
+                    <h3>Rent a car</h3>
+                    <h1>Best rental Cars In <br> Your Location</h1>
+                    <a href="#" class="btn">Reserve now</a>
+                  </div>
+             </div>
+              </div>
+              <div class="carousel-item hero-slide-2 ">
+                <div class="d-flex justify-content-center text-center">
+                   <div class="slider-text">
+                       <h3>Rent a car</h3>
+                       <h1>Best rental Cars In <br> Your Location</h1>
+                       <a href="#" class="btn">Reserve now</a>
+                     </div>
+                </div>
+                 </div>
+                 <div class="carousel-item hero-slide-3 ">
+                    <div class="d-flex justify-content-center text-center">
+                       <div class="slider-text">
+                           <h3>Rent a car</h3>
+                           <h1>Best rental Cars In <br> Your Location</h1>
+                           <a href="#" class="btn">Reserve now</a>
+                         </div>
+                    </div>
+                     </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- Introduction section -->
+    <section class="introduction">
+        <div class="container">
+            <div class="d-flex justify-content-center text-center">
+               <div class="row">
+                <div class="col-md-12">
+                  <div class="intro-text ">
+                    <h2>01</h2>
+                    <h3>welcome to <span class="spot">royal cars</span></h3>
+                 
+                  </div>
+                </div>
+               </div>
+             </div>
+             <div class="intro-img mx-auto">
+                <img src="images/cars pic.png" class="img-fluid" title="Cars" alt="">
+               
+              </div>
+              <p class="intro-desc mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint facilis necessitatibus modi mollitia corrupti laborum exercitationem inventore in cum, laudantium omnis nesciunt aperiam rerum nulla itaque dolor nobis. Ex, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente, culpa mollitia facilis quam quia numquam sed iusto quaerat, vitae sint libero vero ab voluptatem dolores! Reiciendis eveniet excepturi amet.
+              </p>
+
+              <div class="row">
+               
+                    <div class="col-md-6 col-lg-4 col-12 ">
+                        <a href="#">
+                          <div class="my-3 d-flex align-items-center card-section">
+                            <i class="fa-solid fa-headphones-simple  intro-icons me-2"></i>
+                            <p>24/7 car rental support</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="my-3 d-flex align-items-center card-section">
+                            <i class="fa-solid fa-headphones-simple  intro-icons me-2"></i>
+                            <p>24/7 car rental support</p>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-12">
+                        <a href="#">
+                          <div class="my-3 d-flex align-items-center card-section">
+                            <i class="fa-solid fa-headphones-simple  intro-icons me-2"></i>
+                            <p>24/7 car rental support</p>
+                        </div>
+                        </a>
+                    </div>
+                  
+              
+              </div>
+        </div>
+    </section>
+
+    <!-- services -->
+
+    <section class="service-section">
+      <div class="container">
+        <div class="d-flex justify-content-center text-center">
+          <div class="row">
+           <div class="col-md-12">
+             <div class="intro-text ">
+               <h2>02</h2>
+               <h3>Our services</h3>
+            
+             </div>
+           </div>
+          </div>
+        </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4 col-12 ">
+              <div class="card-section">
+                <a href="#">
+                  <div class="my-3 d-flex align-items-center  justify-content-between service-content">
+                    <i class="fa-solid fa-car intro-icons me-2"></i>
+                    <h2>01</h2>
+                </div>
+                <div class="flex-column service-sub">
+                  <h5>Car rental</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit nesciunt ducimus magni beatae, eveniet voluptas similique eius aliquam cum dolores eligendi dignissimos voluptatem!
+                  </p>
+                </div>
+                </a>
+              </div>
+            
+          </div>
+            <div class="col-md-6 col-lg-4 col-12 ">
+              <div class="card-section">
+                <a href="#">
+                  <div class="my-3 d-flex align-items-center  justify-content-between service-content">
+                    <i class="fa-solid fa-credit-card intro-icons me-2"></i>
+                    <h2>02</h2>
+                </div>
+                <div class="flex-column service-sub">
+                  <h5>Car financing</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit nesciunt ducimus magni beatae, eveniet voluptas similique eius aliquam cum dolores eligendi dignissimos voluptatem!
+                  </p>
+                </div>
+                </a>
+              </div>
+            
+          </div>
+            <div class="col-md-6 col-lg-4 col-12">
+              <div class="card-section">
+                <a href="#">
+                  <div class="my-3 d-flex align-items-center  justify-content-between service-content">
+                    <i class="fa-solid fa-car-rear intro-icons"></i>
+                    <h2>03</h2>
+                </div>
+                <div class="flex-column service-sub">
+                  <h5>Car inspection</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit nesciunt ducimus magni beatae, eveniet voluptas similique eius aliquam cum dolores eligendi dignissimos voluptatem!
+                  </p>
+                </div>
+                </a>
+              </div>
+            
+          </div>
+            <div class="col-md-6 col-lg-4 col-12 ">
+              <div class="card-section">
+                <a href="#">
+                  <div class="my-3 d-flex align-items-center  justify-content-between service-content">
+                    <i class="fa-solid fa-gears intro-icons me-2"></i>
+                    <h2>04</h2>
+                </div>
+                <div class="flex-column service-sub">
+                  <h5>auto repairing</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit nesciunt ducimus magni beatae, eveniet voluptas similique eius aliquam cum dolores eligendi dignissimos voluptatem!
+                  </p>
+                </div>
+                </a>
+              </div>
+            
+          </div>
+            <div class="col-md-6 col-lg-4 col-12 ">
+              <div class="card-section">
+                <a href="#">
+                  <div class="my-3 d-flex align-items-center  justify-content-between service-content">
+                    <i class="fa-solid fa-spray-can intro-icons"></i>
+                    <h2>05</h2>
+                </div>
+                <div class="flex-column service-sub">
+                  <h5>auto painting</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit nesciunt ducimus magni beatae, eveniet voluptas similique eius aliquam cum dolores eligendi dignissimos voluptatem!
+                  </p>
+                </div>
+                </a>
+              </div>
+            
+          </div>
+            <div class="col-md-6 col-lg-4 col-12 ">
+              <div class="card-section">
+                <a href="#">
+                  <div class="my-3 d-flex align-items-center  justify-content-between service-content">
+                    <i class="fa-solid fa-pump-soap intro-icons"></i>
+                    <h2>06</h2>
+                </div>
+                <div class="flex-column service-sub">
+                  <h5>auto cleaning</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit nesciunt ducimus magni beatae, eveniet voluptas similique eius aliquam cum dolores eligendi dignissimos voluptatem!
+                  </p>
+                </div>
+                </a>
+              </div>
+            
+          </div>
+          </div>
+        
+      </div>
+      </div>
+    </section>
+
+    <!-- offer -->
+
+    <section class="offer-section">
+      <div class="container">
+        <div class="offer-bg">
+          <div class="d-flex justify-content-center text-center">
+             <div class="offer-text">
+                 <h2>50% off</h2>
+                 <h4>special offer for new members</h4>
+                 <p>
+                  Only for sunday from 1st Feb to 28th Feb 2023
+                 </p>
+                 <a href="#" class="btn">Register now</a>
+               </div>
+          </div>
+           </div>
+      </div>
+    </section>
+
+    <!-- Cars -->
+    <section class="cars-section">
+      <div class="container">
+        <div class="d-flex justify-content-center text-center">
+          <div class="row">
+           <div class="col-md-12">
+             <div class="intro-text ">
+               <h2>03</h2>
+               <h3>Find your cars</h3>
+            
+             </div>
+           </div>
+          </div>
+        </div>
+
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 col-12">
+            <a href="#">
+              <div class="cars-card">
+                <img src="/images/1.png" class="img-fluid" alt="">
+                <h5>mercedes benx r3</h5>
+                <p><i class="fa-solid fa-car"></i>2015 | <i class="fa-solid fa-gears"></i> auto | <i class="fa-solid fa-road"></i> 25k</p>
+                <a href="#" class="btn">$99.00/day</a>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <a href="#">
+
+              <div class="cars-card">
+                <img src="/images/2.png" class="img-fluid" alt="">
+                <h5>mercedes benx r3</h5>
+                <p><i class="fa-solid fa-car"></i>2015 | <i class="fa-solid fa-gears"></i> auto | <i class="fa-solid fa-road"></i> 25k</p>
+                <a href="#" class="btn">$99.00/day</a>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <a href="#">
+              <div class="cars-card">
+                <img src="/images/3.png" class="img-fluid" alt="">
+                <h5>mercedes benx r3</h5>
+                <p><i class="fa-solid fa-car"></i>2015 | <i class="fa-solid fa-gears"></i> auto | <i class="fa-solid fa-road"></i> 25k</p>
+                <a href="#" class="btn">$99.00/day</a>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <a href="#">
+              <div class="cars-card">
+                <img src="/images/4.png" class="img-fluid" alt="">
+                <h5>mercedes benx r3</h5>
+                <p><i class="fa-solid fa-car"></i>2015 | <i class="fa-solid fa-gears"></i> auto | <i class="fa-solid fa-road"></i> 25k</p>
+                <a href="#" class="btn">$99.00/day</a>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <a href="#">
+              <div class="cars-card">
+                <img src="/images/5.png" class="img-fluid" alt="">
+                <h5>mercedes benx r3</h5>
+                <p><i class="fa-solid fa-car"></i>2015 | <i class="fa-solid fa-gears"></i> auto | <i class="fa-solid fa-road"></i> 25k</p>
+                <a href="#" class="btn">$99.00/day</a>
+              </div>
+            </a>
+
+          </div>
+          <div class="col-md-6 col-lg-4 col-12">
+            <a href="#">
+              <div class="cars-card">
+                <img src="/images/6.png" class="img-fluid" alt="">
+                <h5>mercedes benx r3</h5>
+                <p><i class="fa-solid fa-car"></i>2015 | <i class="fa-solid fa-gears"></i> auto | <i class="fa-solid fa-road"></i> 25k</p>
+                <a href="#" class="btn">$99.00/day</a>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team-section">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro-text text-center">
+            <h2>04</h2>
+            <h3>Meet our team</h3>
+          </div>
+        </div>
+      </div>
+    
+        <div class="team mt-3">
+              <div class="team-container">
+                <div class="team-members">
+                  <img src="/images/t1.jpg" alt="">
+                  <h3>FULL NAME</h3>
+                  <p>DESIGNATION</p>
+                 </div>
+              </div>
+              <div class="team-container">
+                <div class="team-members">
+                  <img src="/images/t2.jpg" alt="">
+                  <h3>FULL NAME</h3>
+                  <p>DESIGNATION</p>
+                 </div>
+              </div>
+              <div class="team-container">
+                <div class="team-members">
+                  <img src="/images/t3.jpg" alt="">
+                  <h3>FULL NAME</h3>
+                  <p>DESIGNATION</p>
+                 </div>
+              </div>
+              <div class="team-container">
+                <div class="team-members">
+                  <img src="/images/t4.jpg" alt="">
+                  <h3>FULL NAME</h3>
+                  <p>DESIGNATION</p>
+                 </div>
+              </div>
+              <div class="team-container">
+                <div class="team-members">
+                  <img src="/images/t5.jpg" alt="">
+                  <h3>FULL NAME</h3>
+                  <p>DESIGNATION</p>
+                 </div>
+              </div>
+              <div class="team-container">
+                <div class="team-members">
+                  <img src="/images/t6.jpg" alt="">
+                  <h3>FULL NAME</h3>
+                  <p>DESIGNATION</p>
+                 </div>
+              </div>
+               
+        </div>
+    </div>
+    </section>
+
+    <!-- Register user -->
+    <section class="register-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-7 d-flex align-items-center">
+               <img src="/images/reg11-removebg-preview.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-md-5 text-end d-flex align-items-center">
+               <div class="left-content">
+                <h3>want to be a driver?</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+               <a href="#" class="btn">Start now</a>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-5 text-start d-flex align-items-center">
+               <div class="left-content">
+                <h3>looking for a car</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  </p>
+               <a href="#" class="btn">Start now</a>
+               </div>
+              </div>
+              <div class="col-md-7 d-flex align-items-center">
+                <img src="/images/r22-removebg-preview.png" class="img-fluid" alt="">
+               </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Client -->
+    <section class="client-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="intro-text text-center">
+              <h2>05</h2>
+              <h3>Our client's say</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="clients mt-3">
+          <div class="team-container">
+            <div class="client-members">
+             <div class="d-flex justify-content-between">
+              <img src="/images/cl1.jpg" class="img-fluid" alt="">
+              <i class="fa-solid fa-quote-right client-head pe-3"></i>
+             </div>
+             <div class="flex-column client-remark">
+              <h5>auto cleaning</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit 
+              </p>
+            </div>
+             </div>
+          </div>
+          <div class="team-container">
+            <div class="client-members">
+              <div class="d-flex justify-content-between">
+               <img src="/images/cl1.jpg" class="img-fluid" alt="">
+               <i class="fa-solid fa-quote-right client-head pe-3"></i>
+              </div>
+              <div class="flex-column client-remark">
+               <h5>auto cleaning</h5>
+               <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit 
+               </p>
+             </div>
+              </div>
+          </div>
+          <div class="team-container">
+            <div class="client-members">
+              <div class="d-flex justify-content-between">
+               <img src="/images/cl1.jpg" class="img-fluid" alt="">
+               <i class="fa-solid fa-quote-right client-head pe-3"></i>
+              </div>
+              <div class="flex-column client-remark">
+               <h5>auto cleaning</h5>
+               <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit 
+               </p>
+             </div>
+              </div>
+          </div>
+          <div class="team-container">
+            <div class="client-members">
+              <div class="d-flex justify-content-between">
+               <img src="/images/cl2.jpg" class="img-fluid" alt="">
+               <i class="fa-solid fa-quote-right client-head pe-3"></i>
+              </div>
+              <div class="flex-column client-remark">
+               <h5>auto cleaning</h5>
+               <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit 
+               </p>
+             </div>
+              </div>
+          </div>
+          <div class="team-container">
+            <div class="client-members">
+              <div class="d-flex justify-content-between">
+               <img src="/images/cl3.jpg" class="img-fluid" alt="">
+               <i class="fa-solid fa-quote-right client-head pe-3"></i>
+              </div>
+              <div class="flex-column client-remark">
+               <h5>auto cleaning</h5>
+               <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit 
+               </p>
+             </div>
+              </div>
+          </div>
+          <div class="team-container">
+            <div class="client-members">
+              <div class="d-flex justify-content-between">
+               <img src="/images/cl4.jpg" class="img-fluid" alt="">
+               <i class="fa-solid fa-quote-right client-head pe-3"></i>
+              </div>
+              <div class="flex-column client-remark">
+               <h5>auto cleaning</h5>
+               <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae ea, labore laboriosam illo deleniti impedit 
+               </p>
+             </div>
+              </div>
+          </div>
+           
+    </div>
+      </div>
+    </section>
+
+    <!-- Contact us -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="intro-text text-center">
+              <h2>06</h2>
+              <h3>Contact us</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+              <form class="contact-form">
+              <div class="row g-3 mb-3">
+                <div class="col">
+                  <input type="text" name="name" class="form-control" placeholder="Your name" aria-label="First name">
+                </div>
+                <div class="col">
+                  <input type="text" name="email" class="form-control" placeholder="Your email" aria-label="Last name">
+                </div>
+               
+              </div>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Subject">
+              <div class="form-floating my-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" row="10"></textarea>
+                <label class="text-muted" for="floatingTextarea">Message</label>
+              </div>
+              <a href="#" class="btn">Send Message</a>
+            </form>
+          </div>
+          <div class="col-md-6">
+              <div class="support-section">
+                <div class="d-flex ">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="flex-column">
+                    <h5>Head office</h5>
+                    <p>14 Mirpur kachukhet road,Dhaka</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <div class="flex-column">
+                    <h5>Branch office</h5>
+                    <p>14 Mirpur kachukhet road,Dhaka</p>
+                  </div>
+                </div>
+                <div class="d-flex ">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="flex-column">
+                    <h5>Customer Service</h5>
+                    <p>customer@gmail.coma</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div class="flex-column">
+                    <h5>Return and Refund</h5>
+                    <p>refund@gmail.com</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- brand -->
+    <section class="brand-section">
+      <div class="container">
+        <div class="brands">
+          <div class="brand-members">
+            <img src="/images/audi.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/bentley.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/bmw.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/hundai.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/jaguar.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/lambo.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/mercedes.jpg" class="img-fluid" alt=""> 
+           </div>
+          <div class="brand-members">
+            <img src="/images/nissan.jpg" class="img-fluid" alt=""> 
+           </div>
+
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+       <div class="footer-section">
+
+    
+      <div class="container">
+        <div class="contents">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Get in touch</h5>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                    <i class="fa-solid fa-location-dot"></i>
+                      <p>14 Mirpur kachukhet road,Dhaka</p>
+                  </div>
+                  <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                    <i class="fa-solid fa-phone"></i>
+                      <a href="tel:013256554"><p>0124558885</p></a>
+                  </div>
+                  <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:abc@gmail.com">  <p>abc@gmail.com</p></a>
+                  </div>
+    
+                  <h6>follow us</h6>
+                 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="footer-links">
+                    <div class="d-flex footer-icons justify-content-center justify-content-lg-start justify-content-md-start">
+                      <a href="#">
+                        <i class="fa-brands fa-facebook-f icon-2-fb"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-brands fa-twitter icon-2-twit "></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-brands fa-instagram icon-2-insta fw-bold"></i
+                      ></a>
+                      <a href="#"
+                        ><i class="fa-brands fa-youtube icon-2-utube"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+                <h5>usefull links</h5>
+              <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                <i class="fa-solid fa-chevron-right"></i>
+                  <p>Private Policy</p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                <i class="fa-solid fa-chevron-right"></i>
+                  <p>Terms & Conditions</p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                <i class="fa-solid fa-chevron-right"></i>
+                  <p>New member registration</p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                <i class="fa-solid fa-chevron-right"></i>
+                  <p>Help & FAQ's</p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                <i class="fa-solid fa-chevron-right"></i>
+                  <p>Refund and Policy</p>
+              </div>
+              <div class="d-flex justify-content-center justify-content-lg-start justify-content-md-start">
+                <i class="fa-solid fa-chevron-right"></i>
+                  <p>Private Policy</p>
+              </div>
+            </div>
+
+            <div class="col-md-3"> 
+              <h5>Car gallery</h5>
+              <div class="row g-2">
+                <div class="col-md-4">
+                  <img src="images/lambo.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/bentley.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/nissan.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/bmw.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/mercedes.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4">
+                  <img src="images/jaguar.jpg" class="img-fluid" alt="">
+                </div>
+
+              </div>
+            </div>
+            
+            <div class="col-md-3">
+              <h5>
+                newsletter
+              </h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos a exercitationem labore tempore quos iste necessitatibus eligendi assumenda non libero?</p>
+
+              <div class="d-flex newsletter  justify-content-center justify-content-lg-start justify-content-md-start">
+                <input type="email"/>
+                <a href="#" class="btn">SIGN UP</a>
+              </div>
+              <p>Lorem ispsum text here</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="sub-footer text-center">
+        <p>&copy; <span>ROYAL CARS</span> All Rights reserved</p>
+        <p>Designed by <span>emythmakers.com</span></p>
+      </div>
+    </footer>
+
+
+    <!------ Js ------------>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    </script>
+  </script>
+    <script
+      src="https://kit.fontawesome.com/1dc05809f5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js' type='text/javascript'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#datepicker').datepicker(); 
+        });
+        $(document).ready(function () {
+            $('.team').slick({
+             
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  centerMode: true,
+  variableWidth: true,
+        arrows: true, 
+        autoplay: true,
+            });
+        });
+
+   $(document).ready(function () {
+            $('.clients').slick({
+             
+              dots: true,
+  infinite: true,
+  autoplay:true,
+  autoplaySpeed:1500,
+  centerMode:true,
+  slidesToShow:3,
+  slidesToScroll:2,
+  mobileFirst:true,
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        centerMode:true,
+        centerPadding:'40px',
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 360,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+
+  ]
+            });
+
+
+   $('.brands').slick({
+    dots:true,
+    infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed: 1000,
+  mobileFirst:true,
+  arrows:false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 360,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+        });
+        </script>
+  </body>
+</html>
